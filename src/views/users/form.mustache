@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+
+<form action="{{action}}" method="POST" enctype="multipart/form-data">
+  <label>Ім’я</label>
+  <input type="text" name="name" value="{{user.name}}" required>
+
+  <label>Вік</label>
+  <input type="number" name="age" value="{{user.age}}" required>
+
+  <label>Місто</label>
+  <input type="text" name="city" value="{{user.city}}" required>
+
+  <label>Біо</label>
+  <textarea name="bio">{{user.bio}}</textarea>
+
+  <label>Фото</label>
+  <input type="file" name="photo">
+
+  <button type="submit">{{buttonText}}</button>
+</form>

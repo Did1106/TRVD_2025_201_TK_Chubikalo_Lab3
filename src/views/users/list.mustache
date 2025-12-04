@@ -1,0 +1,20 @@
+<section class="card-stack">
+  {{#users}}
+  <article class="profile-card tinder-card">
+    <img src="/{{photo}}" alt="Фото {{name}}">
+    <div class="profile-info">
+      <h3>{{name}}, {{age}}</h3>
+      <p class="city">{{city}}</p>
+      <p class="bio">{{bio}}</p>
+
+      <div class="crud-controls">
+        <a href="/users/edit/{{id}}">✏</a>
+        <form action="/users/delete/{{id}}" method="POST" style="display:inline;">
+          <button type="submit" class="delete-btn">🗑</button>
+
+        </form>
+      </div>
+    </div>
+  </article>
+  {{/users}}
+</section>
